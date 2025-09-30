@@ -1,44 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Parwinder Singh Ranota | Full Stack Developer</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parwinder Singh Ranota | Full Stack Developer</title>
 
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-<!-- Box Icons -->
-<link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
-<style>
-  body { font-family: 'Roboto', sans-serif; margin:0; background:#f5f7fa; color:#333; }
-  header, footer { background:#0d6efd; color:#fff; padding:1rem; text-align:center; }
-  header h1 { margin:0; font-size:1.8rem; }
-  nav a { color:#fff; text-decoration:none; margin:0 0.5rem; font-weight:500; }
-  nav a:hover { text-decoration:underline; }
-  section { padding:3rem 1.5rem; max-width:1000px; margin:auto; }
-  .section-title { font-size:2rem; text-align:center; margin-bottom:2rem; color:#0d6efd; font-weight:700; }
-  .timeline { border-left:4px solid #0d6efd; margin-left:1rem; padding-left:1.5rem; }
-  .timeline-item { margin-bottom:2rem; position:relative; }
-  .timeline-item::before { content:""; position:absolute; left:-8px; top:0; width:16px; height:16px; background:#0d6efd; border-radius:50%; }
-  .card { background:#fff; padding:1.5rem; border-radius:0.75rem; box-shadow:0 2px 6px rgba(0,0,0,0.1); margin-bottom:1.5rem; }
-  .card h3 { margin-top:0; color:#0d6efd; }
-  .skills { display:flex; flex-wrap:wrap; gap:0.5rem; }
-  .skill-tag { background:#0d6efd; color:#fff; padding:0.4rem 0.8rem; border-radius:0.5rem; font-size:0.9rem; }
-  .contact-item { margin-bottom:0.75rem; }
-  @media(max-width:768px) { section { padding:2rem 1rem; } }
-</style>
+  <style>
+    body { font-family: 'Roboto', sans-serif; background: #f8f9fa; color: #212529; }
+    header, footer { background-color: #0d6efd; color: #fff; padding: 1.5rem 0; text-align: center; }
+    header h1 { margin:0; font-weight: 700; }
+    header nav a { color: #fff; text-decoration: none; margin: 0 1rem; font-weight: 500; }
+    header nav a:hover { text-decoration: underline; }
+    section { padding: 3rem 1rem; max-width: 900px; margin: auto; }
+    .section-title { color: #0d6efd; font-weight: 700; margin-bottom: 2rem; text-align: center; }
+    .card { box-shadow: 0 2px 8px rgba(0,0,0,0.1); margin-bottom: 1.5rem; }
+    .card h5 { color: #0d6efd; }
+    .skill-badge { background-color: #0d6efd; color: #fff; margin: 0.2rem; padding: 0.35rem 0.65rem; border-radius: 0.35rem; font-size: 0.85rem; display: inline-block; }
+    .timeline { border-left: 3px solid #0d6efd; padding-left: 1.5rem; margin-left: 0.5rem; }
+    .timeline-item { position: relative; margin-bottom: 2rem; }
+    .timeline-item::before { content: ''; position: absolute; left: -9px; top: 0; width: 18px; height: 18px; background-color: #0d6efd; border-radius: 50%; }
+    footer p { margin: 0; }
+    @media(max-width:768px){ section{ padding:2rem 1rem; } }
+  </style>
 </head>
-
 <body>
 
 <header>
   <h1>Parwinder Singh Ranota</h1>
   <nav>
-    <a href="#about">About</a> |
-    <a href="#experience">Experience</a> |
-    <a href="#skills">Skills</a> |
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#skills">Skills</a>
     <a href="#contact">Contact</a>
   </nav>
 </header>
@@ -48,9 +46,9 @@
   <!-- ABOUT -->
   <section id="about">
     <h2 class="section-title">About Me</h2>
-    <div class="card">
+    <div class="card p-4">
       <p>
-        I am an experienced Full Stack Developer and Senior Software Engineer with 11 years in software, web, and mobile application development. I specialize in Java, Spring Boot, Microservices, Android/iOS Apps, and modern cloud solutions. I have strong analytical and problem-solving skills and a proven ability to deliver scalable software solutions.
+        I am a Full Stack Developer and Senior Software Engineer with 11 years of experience in software, web, and mobile application development. I specialize in Java, Spring Boot, Microservices, Android & iOS development, cloud platforms, and modern software architectures. I have strong analytical and problem-solving skills with a proven ability to deliver scalable software solutions.
       </p>
     </div>
   </section>
@@ -61,52 +59,51 @@
     <div class="timeline">
 
       <div class="timeline-item">
-        <div class="card">
-          <h3>Senior Software Developer | OpenText</h3>
-          <p><em>Waterloo, ON, Canada | Jan 2024 – Present</em></p>
-          <ul>
-            <li>Developed Terraform Providers in Golang for IoT Platform & Core Intelligence resource management.</li>
-            <li>Built Export to HCL utility using Spring Boot 3.0 & Java 17 for resource migration across environments.</li>
-            <li>Implemented microservices with Spring Boot and upgraded existing services to latest Java version.</li>
-            <li>Led Agile development cycles and CI/CD pipelines using TeamCity & GitLab.</li>
-            <li>Developed Java SE utility for QA automation to push test results into Value Edge platform.</li>
+        <div class="card p-3">
+          <h5>Senior Software Developer | OpenText</h5>
+          <small class="text-muted">Waterloo, ON, Canada | Jan 2024 – Present</small>
+          <ul class="mt-2 mb-0">
+            <li>Developed Terraform Providers in Golang for Aviator IoT Platform & Core Intelligence resource management.</li>
+            <li>Created Export to HCL utility using Spring Boot 3.0 & Java 17 to migrate resources across environments.</li>
+            <li>Implemented microservices using Spring Boot 3.0, upgraded existing services to latest Java version.</li>
+            <li>Led Agile development cycles and implemented CI/CD pipelines using TeamCity & GitLab.</li>
           </ul>
         </div>
       </div>
 
       <div class="timeline-item">
-        <div class="card">
-          <h3>Software Developer | Conestoga Research, Innovation & Entrepreneurship</h3>
-          <p><em>Cambridge, ON | Jan 2023 – Apr 2024</em></p>
-          <ul>
-            <li>Designed feature-rich iOS applications using Core Motion & Core Location frameworks.</li>
-            <li>Integrated machine learning for intelligent data analysis.</li>
-            <li>Managed User Stories and sprint execution using JIRA.</li>
+        <div class="card p-3">
+          <h5>Software Developer | Conestoga Research</h5>
+          <small class="text-muted">Cambridge, ON | Jan 2023 – Apr 2024</small>
+          <ul class="mt-2 mb-0">
+            <li>Designed iOS applications using device sensors (Core Motion, Core Location) for context-aware functionalities.</li>
+            <li>Integrated machine learning algorithms for intelligent data analysis.</li>
+            <li>Managed user stories, sprint planning, and backlog in JIRA for Agile development.</li>
           </ul>
         </div>
       </div>
 
       <div class="timeline-item">
-        <div class="card">
-          <h3>Module Lead-2 | Bebo Technologies</h3>
-          <p><em>Chandigarh, India | Oct 2017 – Apr 2022</em></p>
-          <ul>
-            <li>Developed enterprise solutions using Angular, J2EE, Java, Spring Boot 2, Microservices & Maven.</li>
-            <li>Implemented REST APIs, Microservices, and CI/CD pipelines using Jenkins & Docker/Kubernetes.</li>
-            <li>Optimized SQL queries, performed code reviews, and enhanced system performance.</li>
-            <li>Managed Agile processes and guided team as Module Lead.</li>
+        <div class="card p-3">
+          <h5>Module Lead-2 | Bebo Technologies</h5>
+          <small class="text-muted">Chandigarh, India | Oct 2017 – Apr 2022</small>
+          <ul class="mt-2 mb-0">
+            <li>Developed enterprise solutions using Angular, Java, Spring Boot, Microservices & Maven.</li>
+            <li>Implemented REST APIs, CI/CD pipelines, and Docker/Kubernetes deployments.</li>
+            <li>Optimized SQL queries, performed code reviews, and improved application performance.</li>
+            <li>Led Agile teams as Module Lead and maintained software documentation with Confluence & Swagger.</li>
           </ul>
         </div>
       </div>
 
       <div class="timeline-item">
-        <div class="card">
-          <h3>Java Trainer | Senior Software Developer | Venus Mind Media</h3>
-          <p><em>Amritsar, Punjab, India | Jun 2011 – Jul 2017</em></p>
-          <ul>
+        <div class="card p-3">
+          <h5>Java Trainer | Senior Software Developer | Venus Mind Media</h5>
+          <small class="text-muted">Amritsar, Punjab, India | Jun 2011 – Jul 2017</small>
+          <ul class="mt-2 mb-0">
             <li>Full Stack development using Java, Spring, Hibernate, JSP, Angular & React JS.</li>
-            <li>Designed backend services, SQL procedures, REST APIs and Android mobile apps.</li>
-            <li>Mentored interns and implemented Remote Desktop Controller software for schools.</li>
+            <li>Designed backend services, REST APIs, SQL procedures, and Android applications.</li>
+            <li>Mentored interns and implemented Remote Desktop Controller software for school labs.</li>
           </ul>
         </div>
       </div>
@@ -117,35 +114,35 @@
   <!-- SKILLS -->
   <section id="skills">
     <h2 class="section-title">Technical Skills</h2>
-    <div class="card">
-      <h3>Programming & Backend</h3>
-      <div class="skills">
-        <span class="skill-tag">Java 8/11/17</span>
-        <span class="skill-tag">Golang</span>
-        <span class="skill-tag">Python</span>
-        <span class="skill-tag">Spring Boot 2/3</span>
-        <span class="skill-tag">Microservices</span>
-        <span class="skill-tag">REST APIs</span>
-        <span class="skill-tag">Hibernate</span>
-        <span class="skill-tag">SQL/Oracle/MySQL/Postgres</span>
+    <div class="card p-3">
+      <h5>Programming & Backend</h5>
+      <div class="mt-2 mb-3">
+        <span class="skill-badge">Java 8/11/17</span>
+        <span class="skill-badge">Golang</span>
+        <span class="skill-badge">Python</span>
+        <span class="skill-badge">Spring Boot</span>
+        <span class="skill-badge">Microservices</span>
+        <span class="skill-badge">REST APIs</span>
+        <span class="skill-badge">Hibernate</span>
+        <span class="skill-badge">SQL / Oracle / MySQL / Postgres</span>
       </div>
 
-      <h3>Frontend & Mobile</h3>
-      <div class="skills">
-        <span class="skill-tag">React JS</span>
-        <span class="skill-tag">Angular</span>
-        <span class="skill-tag">HTML/CSS/JS</span>
-        <span class="skill-tag">Android Apps</span>
-        <span class="skill-tag">iOS Apps</span>
+      <h5>Frontend & Mobile</h5>
+      <div class="mt-2 mb-3">
+        <span class="skill-badge">React JS</span>
+        <span class="skill-badge">Angular</span>
+        <span class="skill-badge">HTML/CSS/JS</span>
+        <span class="skill-badge">Android</span>
+        <span class="skill-badge">iOS</span>
       </div>
 
-      <h3>Tools & Cloud</h3>
-      <div class="skills">
-        <span class="skill-tag">Git</span>
-        <span class="skill-tag">Docker/Kubernetes</span>
-        <span class="skill-tag">JIRA</span>
-        <span class="skill-tag">Azure DevOps</span>
-        <span class="skill-tag">GCP & Firebase</span>
+      <h5>Tools & Cloud</h5>
+      <div class="mt-2">
+        <span class="skill-badge">Git</span>
+        <span class="skill-badge">Docker/Kubernetes</span>
+        <span class="skill-badge">JIRA</span>
+        <span class="skill-badge">Azure DevOps</span>
+        <span class="skill-badge">GCP & Firebase</span>
       </div>
     </div>
   </section>
@@ -153,16 +150,12 @@
   <!-- CONTACT -->
   <section id="contact">
     <h2 class="section-title">Contact</h2>
-    <div class="card">
-      <div class="contact-item"><strong>Email:</strong> parwindersingh780@gmail.com</div>
-      <div class="contact-item"><strong>Phone:</strong> +1 (226) 978-6166</div>
-      <div class="contact-item"><strong>Location:</strong> Toronto, Canada</div>
-      <div class="contact-item">
-        <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/parwindersinghranota/" target="_blank">linkedin.com/in/parwindersinghranota</a>
-      </div>
-      <div class="contact-item">
-        <strong>GitHub:</strong> <a href="https://github.com/parwindersinghranota" target="_blank">github.com/parwindersinghranota</a>
-      </div>
+    <div class="card p-3">
+      <p><strong>Email:</strong> parwindersingh780@gmail.com</p>
+      <p><strong>Phone:</strong> +1 (226) 978-6166</p>
+      <p><strong>Location:</strong> Toronto, Canada</p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/parwindersinghranota/" target="_blank">linkedin.com/in/parwindersinghranota</a></p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/parwindersinghranota" target="_blank">github.com/parwindersinghranota</a></p>
     </div>
   </section>
 
@@ -171,6 +164,9 @@
 <footer>
   <p>&copy; 2025 Parwinder Singh Ranota. All Rights Reserved.</p>
 </footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
