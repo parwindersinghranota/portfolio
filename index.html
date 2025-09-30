@@ -16,30 +16,20 @@
       font-family: 'Roboto', sans-serif;
       background: #ffffff;
       color: #222;
+      line-height: 1.6;
     }
 
     header, footer {
       background-color: #f0f0f0;
       color: #222;
-      padding: 1.5rem 0;
+      padding: 2rem 1rem;
       text-align: center;
     }
 
     header h1 {
       margin: 0;
       font-weight: 400;
-      font-size: 2rem;
-    }
-
-    header nav a {
-      color: #222;
-      text-decoration: none;
-      margin: 0 1rem;
-      font-weight: 400;
-    }
-
-    header nav a:hover {
-      text-decoration: underline;
+      font-size: 2.2rem;
     }
 
     section {
@@ -54,6 +44,8 @@
       text-align: center;
       font-weight: 400;
       font-size: 1.8rem;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 0.5rem;
     }
 
     .card {
@@ -61,6 +53,7 @@
       box-shadow: 0 1px 4px rgba(0,0,0,0.08);
       margin-bottom: 1.5rem;
       border: none;
+      padding: 1.5rem;
     }
 
     .card h5 {
@@ -117,7 +110,7 @@
 
     @media(max-width:768px){
       section{ padding:2rem 1rem; }
-      header h1 { font-size: 1.6rem; }
+      header h1 { font-size: 1.8rem; }
     }
   </style>
 </head>
@@ -125,13 +118,7 @@
 
 <header>
   <h1>Parwinder Singh Ranota</h1>
-  <nav>
-    <a href="#about">About</a>
-    <a href="#experience">Experience</a>
-    <a href="#skills">Skills</a>
-    <a href="#education">Education</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  <p>Full Stack Developer | Android & iOS App Development | Java Backend | Spring Boot | Microservices</p>
 </header>
 
 <main>
@@ -139,7 +126,7 @@
   <!-- ABOUT -->
   <section id="about">
     <h2 class="section-title">About Me</h2>
-    <div class="card p-4">
+    <div class="card">
       <p>
         I am a Full Stack Developer and Senior Software Engineer with 11 years of experience in software, web, and mobile application development. I specialize in Java, Spring Boot, Microservices, Android & iOS development, cloud platforms, and modern software architectures. I possess strong analytical skills and deliver scalable, maintainable software solutions.
       </p>
@@ -152,7 +139,7 @@
     <div class="timeline">
 
       <div class="timeline-item">
-        <div class="card p-3">
+        <div class="card">
           <h5>Senior Software Developer | OpenText</h5>
           <small class="text-muted">Waterloo, ON, Canada | Jan 2024 – Present</small>
           <ul class="mt-2 mb-0">
@@ -167,7 +154,7 @@
       </div>
 
       <div class="timeline-item">
-        <div class="card p-3">
+        <div class="card">
           <h5>Software Developer | Conestoga Research, Innovation & Entrepreneurship</h5>
           <small class="text-muted">Cambridge, ON | Jan 2023 – Apr 2024</small>
           <ul class="mt-2 mb-0">
@@ -179,7 +166,7 @@
       </div>
 
       <div class="timeline-item">
-        <div class="card p-3">
+        <div class="card">
           <h5>Module Lead-2 | Bebo Technologies</h5>
           <small class="text-muted">Chandigarh, India | Oct 2017 – Apr 2022</small>
           <ul class="mt-2 mb-0">
@@ -193,7 +180,7 @@
       </div>
 
       <div class="timeline-item">
-        <div class="card p-3">
+        <div class="card">
           <h5>Java Trainer | Senior Software Developer | Venus Mind Media</h5>
           <small class="text-muted">Amritsar, Punjab, India | Jun 2011 – Jul 2017</small>
           <ul class="mt-2 mb-0">
@@ -210,7 +197,7 @@
   <!-- SKILLS -->
   <section id="skills">
     <h2 class="section-title">Technical Skills</h2>
-    <div class="card p-3">
+    <div class="card">
       <h5>Programming & Backend</h5>
       <div class="mt-2 mb-3">
         <span class="skill-badge">Java 8/11/17</span>
@@ -250,7 +237,7 @@
   <!-- EDUCATION -->
   <section id="education">
     <h2 class="section-title">Education</h2>
-    <div class="card p-3">
+    <div class="card">
       <ul class="mb-0">
         <li><strong>Mobile Solution Development (MSD)</strong> - Conestoga College, Waterloo, ON, Canada | GPA: 3.65 | May 2022 – Aug 2023</li>
         <li><strong>Master of Computer Applications (MCA)</strong> - Guru Nanak Dev University, Amritsar, India | 73% | Jun 2008 – May 2011</li>
@@ -262,7 +249,7 @@
   <!-- CONTACT -->
   <section id="contact">
     <h2 class="section-title">Contact</h2>
-    <div class="card p-3">
+    <div class="card">
       <p><strong>Email:</strong> parwindersingh780@gmail.com</p>
       <p><strong>Phone:</strong> +1 (226) 978-6166</p>
       <p><strong>Location:</strong> Toronto, Canada</p>
