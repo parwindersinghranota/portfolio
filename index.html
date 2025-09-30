@@ -1,221 +1,172 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parwinder Singh Ranota | Full Stack Developer</title>
 
-        <!-- ===== CSS ===== -->
-        <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="assets/css/styles.css">
 
-        <!-- ===== BOX ICONS ===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <!-- ===== BOX ICONS ===== -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
-        <title>Parwinder Singh Ranota</title>
-    </head>
-    <body>
-        <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div>
-                    <a href="#" class="nav__logo">Parwinder Singh Ranota</a>
+    <!-- ===== GOOGLE FONTS ===== -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        body { font-family: 'Roboto', sans-serif; background: #f8f9fa; margin:0; }
+        .section-title { font-size: 2rem; font-weight: 700; margin-bottom: 2rem; text-align:center; color:#007bff; }
+        header, footer { background: #1a1a1a; color: #fff; }
+        .nav__logo { font-weight: bold; font-size:1.3rem; }
+        .home { display:flex; flex-direction:column; align-items:center; justify-content:center; height:100vh; text-align:center; background:#007bff; color:#fff; }
+        .home__title { font-size:3rem; line-height:1.2; font-weight:700; }
+        .home__img { width:200px; border-radius:50%; margin-top:2rem; }
+        .section { padding:4rem 2rem; }
+        .about__container, .skills__container, .portfolio__container, .contact__container { display:flex; flex-wrap:wrap; gap:2rem; justify-content:center; align-items:flex-start; }
+        .about__img img, .skills__img img { max-width:100%; border-radius:1rem; }
+        .skills__box, .contact__info { flex:1 1 300px; }
+        .skills__name { display:inline-block; margin:0.25rem 0.5rem; background:#007bff; color:#fff; padding:0.25rem 0.75rem; border-radius:0.5rem; font-size:0.9rem; }
+        .portfolio__img { position:relative; flex:1 1 250px; overflow:hidden; border-radius:1rem; cursor:pointer; }
+        .portfolio__img img { width:100%; transition:0.3s; }
+        .portfolio__img:hover img { transform:scale(1.1); }
+        .portfolio__link { position:absolute; bottom:0; width:100%; text-align:center; background:rgba(0,0,0,0.6); padding:0.5rem; opacity:0; transition:0.3s; }
+        .portfolio__img:hover .portfolio__link { opacity:1; }
+        .portfolio__link-name { color:#fff; text-decoration:none; font-weight:600; }
+        .contact__info span { display:block; margin-bottom:0.5rem; }
+        .footer { padding:2rem; text-align:center; background:#1a1a1a; color:#fff; }
+        .footer__link, .footer__social { color:#fff; text-decoration:none; margin-right:1rem; transition:0.3s; }
+        .footer__link:hover, .footer__social:hover { color:#007bff; }
+        @media(max-width:768px){ .home__title{ font-size:2.2rem; } .home__img{ width:150px; } }
+    </style>
+</head>
+<body>
+
+<!--===== HEADER =====-->
+<header class="l-header">
+    <nav class="nav bd-grid">
+        <div>
+            <a href="#" class="nav__logo">Parwinder Singh Ranota</a>
+        </div>
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
+                <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+            </ul>
+        </div>
+        <div class="nav__toggle" id="nav-toggle"><i class='bx bx-menu'></i></div>
+    </nav>
+</header>
+
+<main class="l-main">
+
+    <!--===== HOME =====-->
+    <section class="home" id="home">
+        <h1 class="home__title">HELLO.<br><span>I'am Parwinder Singh Ranota</span></h1>
+        <p>Full Stack Developer | Android & iOS Apps | Java Backend | Microservices | SpringBoot</p>
+        <img src="assets/img/perfil.png" alt="Parwinder Singh Ranota" class="home__img">
+    </section>
+
+    <!--===== ABOUT =====-->
+    <section class="about section" id="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about__container bd-grid">
+            <div class="about__img"><img src="assets/img/perfil.png" alt="Profile"></div>
+            <div>
+                <p>Experienced IT professional with 11 years in software, web, and mobile development. Skilled in translating business requirements into scalable, reusable software solutions.</p>
+                <ul>
+                    <li>Senior Software Developer at OpenText | Waterloo, ON, Canada (Jan 2024 – Present)</li>
+                    <li>Software Developer at Conestoga Research | Cambridge, ON (Jan 2023 – Apr 2024)</li>
+                    <li>Module Lead-2 at Bebo Technologies | Chandigarh, India (Oct 2017 – Apr 2022)</li>
+                    <li>Java Trainer & Senior Software Developer at Venus Mind Media | Amritsar, India (Jun 2011 – Jul 2017)</li>
+                </ul>
+                <div class="about__social">
+                    <a href="https://www.linkedin.com/in/parwindersinghranota/" target="_blank" class="about__social-icon"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/parwindersinghranota" target="_blank" class="about__social-icon"><i class='bx bxl-github'></i></a>
                 </div>
-
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                    </ul>
-                </div>
-
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
-        </header>
-
-        <main class="l-main">
-            <!--===== HOME =====-->
-            <section class="home" id="home">
-                <div class="home__container bd-grid">
-                    <h1 class="home__title"><span>HE</span><br>LLO.</h1>
-
-                    <div class="home__scroll">
-                        <a href="#about" class="home__scroll-link"><i class='bx bx-up-arrow-alt' ></i>Scroll down</a>
-                    </div>
-
-                    <img src="assets/img/perfil.png" alt="" class="home__img">
-                </div>
-            </section>
-            
-            <!--===== ABOUT =====-->
-            <section class="about section" id="about">
-                <h2 class="section-title">About</h2>
-
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="assets/img/perfil.png" alt="">
-                    </div>
-
-                    <div>
-                        <h2 class="about__subtitle">I'am Parwinder Singh Ranota</h2>
-                        <span class="about__profession">Full Stack Developer | Android & iOS App Development | Java Backend Developer | SpringBoot | Microservices</span>
-                        <p class="about__text">As an experienced IT professional with 11 years of expertise in software, web, and mobile application development, I possess excellent communication and analytical skills. I have a proven ability to develop complex functionality and convert business requirements into sustainable software solutions.</p>
-
-                        <div class="about__social">
-                            <a href="https://www.linkedin.com/in/parwindersinghranota/" target="_blank" class="about__social-icon"><i class='bx bxl-linkedin' ></i></a>
-                            <a href="https://github.com/parwindersinghranota" target="_blank" class="about__social-icon"><i class='bx bxl-github' ></i></a>
-                            <a href="#" class="about__social-icon"><i class='bx bxl-dribbble' ></i></a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!--===== SKILLS =====-->
-            <section class="skills section" id="skills">
-                <h2 class="section-title">Skills</h2>
-
-                <div class="skills__container bd-grid">
-                    <div class="skills__box">
-                        <h3 class="skills__subtitle">Development</h3>
-                        <span class="skills__name">Java</span>
-                        <span class="skills__name">Android</span>
-                        <span class="skills__name">Swift Storyboard</span>
-                        <span class="skills__name">SpringBoot</span>
-                        <span class="skills__name">Microservices</span>
-                        <span class="skills__name">React JS</span>
-                        <span class="skills__name">HTML/CSS/JS</span>
-                        <span class="skills__name">Firebase</span>
-                        <span class="skills__name">Oracle</span>
-                        
-                        <h3 class="skills__subtitle">Database</h3>
-                        <span class="skills__name">Oracle</span>
-                        <span class="skills__name">MS SQL SERVER</span>
-                        <span class="skills__name">Firebase Realtime</span>
-                    </div>
-
-                    <div class="skills__img">
-                        <img src="assets/img/skills.jpg" alt="">
-                    </div>
-                </div>
-            </section>
-
-            <!--===== PORTFOLIO =====-->
-            <section class="portfolio section" id="portfolio">
-                <h2 class="section-title">Portfolio</h2>
-
-                <div class="portfolio__container bd-grid">
-                    <div class="portfolio__img">
-                        <img src="assets/img/work1.jpg" alt="">
-
-                        <div class="portfolio__link">
-                            <a href="https://play.google.com/store/apps/details?id=parwinder.singh.livekirtan" class="portfolio__link-name">View details</a>
-                        </div>
-                    </div>
-                    <div class="portfolio__img">
-                        <img src="assets/img/work2.jpg" alt="">
-
-                        <div class="portfolio__link">
-                            <a href="https://play.google.com/store/apps/details?id=com.sikhstudio.sikhi" class="portfolio__link-name">View details</a>
-                        </div>
-                    </div>
-                    <div class="portfolio__img">
-                        <img src="assets/img/work3.jpg" alt="">
-
-                        <div class="portfolio__link">
-                            <a href="https://play.google.com/store/apps/details?id=parwinder.singh.sukhmanisahib" class="portfolio__link-name">View details</a>
-                        </div>
-                    </div>
-                    <div class="portfolio__img">
-                        <img src="assets/img/work4.jpg" alt="">
-
-                        <div class="portfolio__link">
-                            <a href="#" class="portfolio__link-name">View details</a>
-                        </div>
-                    </div>
-                    <div class="portfolio__img">
-                        <img src="assets/img/work5.jpg" alt="">
-
-                        <div class="portfolio__link">
-                            <a href="#" class="portfolio__link-name">View details</a>
-                        </div>
-                    </div>
-                    <div class="portfolio__img">
-                        <img src="assets/img/work6.jpg" alt="">
-
-                        <div class="portfolio__link">
-                            <a href="#" class="portfolio__link-name">View details</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!--===== CONTACT =====-->
-            <section class="contact section" id="contact">
-                <h2 class="section-title">Contact</h2>
-
-                <div class="contact__container bd-grid">
-                    <div class="contact__info">
-                        <h3 class="contact__subtitle">EMAIL</h3>
-                        <span class="contact__text">parwindersingh780@gmail.com</span>
-
-                        <h3 class="contact__subtitle">PHONE</h3>
-                        <span class="contact__text">+1 (226) 978-6166</span>
-
-                        <h3 class="contact__subtitle">ADRESS</h3>
-                        <span class="contact__text">Toronto, Canada</span>
-                    </div>
-
-                    <!-- <form action="" class="contact__form">
-                        <div class="contact__inputs">
-                            <input type="text" placeholder="Name" class="contact__input">
-                            <input type="mail" placeholder="Email" class="contact__input">
-                        </div>
-
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-
-                        <input type="submit" value="Enviar" class="contact__button">
-                    </form> -->
-
-                </div>
-            </section>
-        </main>
-
-        <!--===== FOOTER =====-->
-        <footer class="footer section">
-            <div class="footer__container bd-grid">
-                <div class="footer__data">
-                    <h2 class="footer__title">Parwinder Singh Ranota</h2>
-                    <p class="footer__text">I'm Parwinder Singh Ranota and this is my personal website</p>
-                </div>
-
-                <div class="footer__data">
-                    <h2 class="footer__title">EXPLORE</h2>
-                    <ul>
-                        <li><a href="#home" class="footer__link">Home</a></li>
-                        <li><a href="#about" class="footer__link">About</a></li>
-                        <li><a href="#skills" class="footer__link">Skills</a></li>
-                        <li><a href="#portfolio" class="footer__link">Portfolio</a></li>
-                        <li><a href="#Contact" class="footer__link">Contact</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer__data">
-                    <h2 class="footer__title">FOLLOW</h2>
-                    <a href="https://www.facebook.com/sikh.studio" class="footer__social"><i class='bx bxl-facebook' ></i></a>
-                    <a href="https://www.instagram.com/sikh.studio/" class="footer__social"><i class='bx bxl-instagram' ></i></a>
-                </div>
-
-
             </div>
-        </footer>
+        </div>
+    </section>
 
-        <!--===== SCROLL REVEAL =====-->
-        <script src="https://unpkg.com/scrollreveal"></script>
+    <!--===== SKILLS =====-->
+    <section class="skills section" id="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills__container bd-grid">
+            <div class="skills__box">
+                <h3>Development</h3>
+                <span class="skills__name">Java</span>
+                <span class="skills__name">Golang</span>
+                <span class="skills__name">Python</span>
+                <span class="skills__name">Spring Boot 2 & 3</span>
+                <span class="skills__name">Microservices</span>
+                <span class="skills__name">React JS</span>
+                <span class="skills__name">Angular</span>
+                <span class="skills__name">HTML/CSS/JS</span>
+                <span class="skills__name">Android/iOS Apps</span>
 
-        <!--===== MAIN JS =====-->
-        <script src="assets/js/main.js"></script>
-    </body>
+                <h3>Databases</h3>
+                <span class="skills__name">Oracle</span>
+                <span class="skills__name">MySQL</span>
+                <span class="skills__name">MS SQL</span>
+                <span class="skills__name">Firebase</span>
+                <span class="skills__name">MongoDB</span>
+
+                <h3>DevOps & Tools</h3>
+                <span class="skills__name">Git</span>
+                <span class="skills__name">Docker/Kubernetes</span>
+                <span class="skills__name">JIRA</span>
+                <span class="skills__name">Azure DevOps</span>
+            </div>
+            <div class="skills__img"><img src="assets/img/skills.jpg" alt="Skills"></div>
+        </div>
+    </section>
+
+    <!--===== PORTFOLIO =====-->
+    <section class="portfolio section" id="portfolio">
+        <h2 class="section-title">Portfolio</h2>
+        <div class="portfolio__container bd-grid">
+            <div class="portfolio__img">
+                <img src="assets/img/work1.jpg" alt="">
+                <div class="portfolio__link"><a href="https://play.google.com/store/apps/details?id=parwinder.singh.livekirtan" class="portfolio__link-name">Live Kirtan App</a></div>
+            </div>
+            <div class="portfolio__img">
+                <img src="assets/img/work2.jpg" alt="">
+                <div class="portfolio__link"><a href="https://play.google.com/store/apps/details?id=com.sikhstudio.sikhi" class="portfolio__link-name">Sikhi App</a></div>
+            </div>
+            <div class="portfolio__img">
+                <img src="assets/img/work3.jpg" alt="">
+                <div class="portfolio__link"><a href="https://play.google.com/store/apps/details?id=parwinder.singh.sukhmanisahib" class="portfolio__link-name">Sukhmani Sahib App</a></div>
+            </div>
+        </div>
+    </section>
+
+    <!--===== CONTACT =====-->
+    <section class="contact section" id="contact">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact__container bd-grid">
+            <div class="contact__info">
+                <h3>Email</h3>
+                <span>parwindersingh780@gmail.com</span>
+                <h3>Phone</h3>
+                <span>+1 (226) 978-6166</span>
+                <h3>Address</h3>
+                <span>Toronto, Canada</span>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!--===== FOOTER =====-->
+<footer class="footer section">
+    <p>&copy; 2025 Parwinder Singh Ranota. All rights reserved.</p>
+</footer>
+
+<!--===== SCROLL REVEAL =====-->
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="assets/js/main.js"></script>
+</body>
 </html>
